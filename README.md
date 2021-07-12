@@ -1,5 +1,11 @@
-NexusToArtifactory
-==================
+
+# ⚠️ DEPRECATED - NexusToArtifactory
+
+The JFrog NexusToArtifactory migrator has been deprecated and replaced with the new Nexus to Artifactory Migrator tool.
+To learn more about the new tool, and to download and use it, see  [Migrating from Sonatype Nexus Repository to Artifactory](https://www.jfrog.com/confluence/display/JFROG/Migrating+from+Sonatype+Nexus+Repository+To+Artifactory)
+
+
+----
 
 This tool is designed to ease the transition from Sonatype Nexus to JFrog
 Artifactory. It provides a simple wizard-like interface that allows you to
@@ -117,6 +123,8 @@ allowing you to input the Nexus URL, username, and password. This is because
 Nexus 3 does not make all of its data available on the filesystem like Nexus 2
 does, so the tool must connect to the instance to retrieve some of the
 information.
+
+**Note:** For Windows 10 (DOS command window) that is running behind a proxy, install [CNTLM](https://stackoverflow.com/a/29925732/6761668) to point to the proxy and set WinHTTP to point to the local CNTLM and then run theNexusToArtifactory.exe to avoid connectivity issues to Artifactory server.
 
 ![Setup Menu Screenshot With Filled Options](doc/setupFilled.png)
 
